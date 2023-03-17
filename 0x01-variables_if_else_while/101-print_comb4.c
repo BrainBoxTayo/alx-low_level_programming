@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
-  * main - prints all combinations of single digit numbers of base 10
+  * main - prints all combinations of three single digit numbers of base 10
   * Return: returns 0 not 1
   */
 int main(void)
