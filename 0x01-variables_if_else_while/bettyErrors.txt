@@ -1,6 +1,5 @@
 
-========== 9-print_comb.c ==========
-9-print_comb.c:21: ERROR: trailing whitespace
-total: 1 errors, 0 warnings, 36 lines checked
-print
+========== 100-print_comb3.c ==========
+100-print_comb3.c:17: ERROR: space required before the open parenthesis '('
+total: 1 errors, 0 warnings, 40 lines checked
 main
