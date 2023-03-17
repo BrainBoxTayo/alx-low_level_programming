@@ -3,8 +3,6 @@
 #include <time.h>
 /**
   * main - gets the last digit of a number n
-  * @n: n is used to hold the random number
-  *
   * Return: always return 0
   */
 int main(void)
@@ -18,7 +16,7 @@ int main(void)
 	{
 		printf("and is greater than 5\n");
 	}
-	else if ((n % 10) < 6 && n != 0)
+	else if (((n % 10) < 6) && (n != 0))
 	{
 		printf("and is less than 6 and not 0\n");
 	}
