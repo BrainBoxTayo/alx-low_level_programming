@@ -5,41 +5,27 @@
   */
 int main(void)
 {
-	int array[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	int index_storer = 0, index_max = 10;
-	int i, j, k, a, b;
+	int i, j, k;
 
-	do {
-	for (a = index_storer; a < index_max; a++)
+	for (i = 0; i <= 9; i++)
 	{
-		i = array[index_storer];
-		j = array[a];
-		for (b = index_storer; b < index_max; b++)
+		for (j = 0; j <= 9; j++)
 		{
-			k = array[b];
-			if (i == k || i == j || j == k)
+			for (k = 0; k <= 9; k++)
 			{
-				continue;
-			}
-			else
-			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (i != 8)
+				if (j > k && k > i)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i != 7)
+					{
+						putchar('\n');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
-	index_storer++;
-	if (i == 7 && j == 8 && k == 9)
-	{
-		putchar('\n');
-		index_storer = 0;
-	}
-	} while (index_storer);
-	return (0);
+	putchar('\n');
 }
