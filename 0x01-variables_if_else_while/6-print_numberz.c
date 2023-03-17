@@ -1,6 +1,7 @@
 #include<stdio.h>
 /**
   * print - prints numbers using putchar function
+  * @n: this is the storage for the int from the main function
   * Return: it is void so no return value
   */
 void print(int n)
