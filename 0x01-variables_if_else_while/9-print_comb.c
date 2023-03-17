@@ -18,7 +18,6 @@ void print(int i)
 		putchar(',');
 		putchar(' ');
 	}
-	
 }
 /**
   * main - prints all combinations of single digit numbers of base 10
