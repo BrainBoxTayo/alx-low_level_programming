@@ -1,0 +1,13 @@
+
+========== 1-last_digit.c ==========
+1-last_digit.c:17: ERROR: space prohibited after that open parenthesis '('
+1-last_digit.c:17: ERROR: space prohibited before that close parenthesis ')'
+1-last_digit.c:17: ERROR: space required before the open parenthesis '('
+1-last_digit.c:21: ERROR: space prohibited after that open parenthesis '('
+1-last_digit.c:21: ERROR: space prohibited before that close parenthesis ')'
+1-last_digit.c:21: ERROR: space required before the open parenthesis '('
+1-last_digit.c:25: ERROR: space prohibited after that open parenthesis '('
+1-last_digit.c:25: ERROR: space prohibited before that close parenthesis ')'
+1-last_digit.c:25: ERROR: space required before the open parenthesis '('
+total: 9 errors, 0 warnings, 30 lines checked
+main
