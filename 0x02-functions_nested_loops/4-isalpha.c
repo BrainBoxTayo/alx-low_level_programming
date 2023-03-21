@@ -1,6 +1,6 @@
 #include"main.h"
 /**
-  * _islower- used to check for lower or uppercase characters
+  * _isalpha- used to check if a letter is in the alphabet
   * @c: this stores the value to be tested
   *
   * Return: returns 1 if c is a letter, otherwise return 0
