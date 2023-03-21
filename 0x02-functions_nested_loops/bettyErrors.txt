@@ -1,0 +1,8 @@
+
+========== 11-print_to_98.c ==========
+11-print_to_98.c:13: ERROR: space required before the open brace '{'
+11-print_to_98.c:25: ERROR: space required after that close brace '}'
+11-print_to_98.c:30: ERROR: space required before the open brace '{'
+11-print_to_98.c:41: ERROR: space required after that close brace '}'
+total: 4 errors, 0 warnings, 48 lines checked
+print_to_98
