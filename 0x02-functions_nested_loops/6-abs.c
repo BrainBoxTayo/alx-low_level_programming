@@ -1,6 +1,6 @@
 #include"main.h"
 /**
-  * _abs: this is used to get the absolute value of the parameter
+  * _abs- this is used to get the absolute value of the parameter
   * @n: stores the value to be made absolute
   * Return: returns the absolute value of the integer
   */
