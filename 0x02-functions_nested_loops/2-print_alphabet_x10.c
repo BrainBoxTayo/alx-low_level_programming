@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * print_alphabet- function to print out the alphabet
+ * print_alphabet_x10- function to print out the alphabet
  * Description: this uses a while loop to print out the a-z 10 times
  * Return: no return value (void)
  */
