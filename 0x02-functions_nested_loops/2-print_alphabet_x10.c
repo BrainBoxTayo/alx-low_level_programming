@@ -2,6 +2,7 @@
 
 /**
  * print_alphabet- function to print out the alphabet
+ * Description: this uses a while loop to print out the a-z 10 times
  * Return: no return value (void)
  */
 
