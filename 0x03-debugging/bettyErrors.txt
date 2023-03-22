@@ -1,0 +1,9 @@
+
+========== 1-main.c ==========
+1-main.c:13: ERROR: trailing whitespace
+1-main.c:16: WARNING: Block comments use a leading /* on a separate line
+1-main.c:17: WARNING: Block comments use * on subsequent lines
+1-main.c:19: WARNING: Block comments use a trailing */ on a separate line
+1-main.c:22: ERROR: trailing whitespace
+total: 2 errors, 3 warnings, 24 lines checked
+main
