@@ -13,6 +13,6 @@ void jack_bauer(void);
 int add(int num1, int num2);
 void print_to_98(int n);
 int largest_number(int a, int b, int c);
-int print_remaining_days(int month, int day, int year);
+void print_remaining_days(int month, int day, int year);
 int convert_day(int month, int year);
 #endif
