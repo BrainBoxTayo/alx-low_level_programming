@@ -12,4 +12,5 @@ int print_last_digit(int n);
 void jack_bauer(void);
 int add(int num1, int num2);
 void print_to_98(int n);
+int largest_number(int a, int b, int c);
 #endif
