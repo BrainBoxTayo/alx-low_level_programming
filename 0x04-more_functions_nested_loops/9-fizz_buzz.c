@@ -9,24 +9,25 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
+		if(i != 100 && i != 1)
+		{
+			printf(" ");
+		}
 		if ((!(i % 3)) && (!(i % 5)))
 		{
-			printf("FizzBuzz ");
-			continue;
+			printf("FizzBuzz");
 		}
 		else if ((i % 3) == 0)
 		{
-			printf("Fizz ");
-			continue;
+			printf("Fizz");
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("Buzz ");
-			continue;
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", (i));
+			printf("%d ", i);
 		}
 	}
 	printf("\n");
