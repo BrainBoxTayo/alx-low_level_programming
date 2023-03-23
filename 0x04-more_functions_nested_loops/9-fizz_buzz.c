@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
-  * main - FizzBuzz
+  * main - FizzBuzz challenge
   * Return: returns 0
   */
 int main(void)
