@@ -7,9 +7,7 @@
 
 int main(void)
 {
-	unsigned long long int num = 612852475143;
-	int i, j;
-	int prime;
+	unsigned long int num = 612852475143, i, j, prime;
 
 	for (i = 2; i <= num / 2; i++)
 	{
@@ -24,10 +22,10 @@ int main(void)
 				else
 				{
 					prime = i;
-					printf("%llu\n", prime);
 				}
 			}
 		}
 	}
+	printf("%lu", prime);
 	return (0);
 }
