@@ -1,7 +1,7 @@
 #include<stdio.h>
-/*
- * main - prints all natural numbers below 1024 that are multiples of 3 and 5
- *
+/**
+ * main - sum of natural numbers of multiples of 3 and 5
+ * Description: adds numbers of multiples of 3 and 5 below 1024
  * Return: 0
  */
 
@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 1024; i++)
 	{
-		if((i % 3 == 0) || (i % 5 == 0))
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
 			sum += i;
 		}
