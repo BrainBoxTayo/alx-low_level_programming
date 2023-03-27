@@ -16,7 +16,7 @@ void puts_half(char *str)
 	/*this gets half of the string for even lengths*/
 	if (size % 2 == 0)
 	{
-		for (i = size / 2; i <= size; i++)
+		for (i = size / 2; i < size; i++)
 		{
 			_putchar(*(str + i));
 		}
@@ -24,7 +24,7 @@ void puts_half(char *str)
 	/*this gets half of the string for odd lengths*/
 	else
 	{
-		for (i = ((size - 1) / 2); i <= size; i++)
+		for (i = ((size - 1) / 2); i < size; i++)
 		{
 			_putchar(*(str + i));
 		}
