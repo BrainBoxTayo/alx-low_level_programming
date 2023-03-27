@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include"main.h"
+
 /**
   * puts2 - prints every other character(even)
   * @str: this is the string
@@ -15,7 +16,7 @@ void puts2(char *str)
 		;
 	while (i != size)
 	{
-		if(i % 2 == 0)
+		if (i % 2 == 0)
 			_putchar(*(str + i));
 		i++;
 	}
