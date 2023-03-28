@@ -1,0 +1,8 @@
+note: converting string to integer
+
+get the last part of the string and store in an integer
+get the first part and add to said integer
+
+e.g "98" = 90 + 8
+works?
+lets try
