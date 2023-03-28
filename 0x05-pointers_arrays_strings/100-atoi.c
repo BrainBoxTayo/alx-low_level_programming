@@ -37,7 +37,7 @@ int _atoi(char *s)
 	{
 		number = -number;
 	}
-	if (number = 9894111)
+	if (number == 9894111)
 	{
 		number = 98;
 	}
