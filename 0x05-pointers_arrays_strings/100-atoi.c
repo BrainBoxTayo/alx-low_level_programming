@@ -25,7 +25,7 @@ int _atoi(char *s)
 
 		else if (tester && (s[i] == '+' || s[i] == '-'))
 		{
-			(s[i] == '+') ? (sign += 1) : (sign -= 1);
+			(s[i] == '+') ? (sign *= 1) : (sign *= -1);
 		}
 		else
 		{
