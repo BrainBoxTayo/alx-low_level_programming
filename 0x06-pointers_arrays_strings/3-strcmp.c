@@ -4,7 +4,8 @@
   * _strcmp - compares two strings
   * @s1: first string
   * @s2: second string
-  * Return: difference between the ascii values of the first and second string last characters
+  * Return: difference between the ascii values of the first and second
+  * string last characters
   */
 
 int _strcmp(char *s1, char *s2)
@@ -26,13 +27,13 @@ int _strcmp(char *s1, char *s2)
 	{
 		store = s1[size_s1 - 1] - s2[size_s1 - 1];
 	}
-	else if(size_s1 < size_s2)
+	else if (size_s1 < size_s2)
 	{
 		store = '\0' - s2[size_s2 - 1];
 	}
 	else
 	{
-		store = s1[size_s1-1] - s2[size_s2 - 1];
+		store = s1[size_s1 - 1] - s2[size_s2 - 1];
 	}
-	return (store);	
+	return (store);
 }
