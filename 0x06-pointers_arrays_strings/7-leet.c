@@ -16,7 +16,7 @@ char *leet(char *str)
 	{
 		j = 0;
 		do {
-			if (str[i] == array_main[j] || str[i] == array_main[j] + 32)
+			if (str[i] == array_main[j] || str[i] == array_main[j] - 32)
 			{
 				str[i] = array_leet[j];
 				break;
