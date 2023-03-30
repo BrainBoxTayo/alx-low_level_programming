@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include"main.h"
-#define DC2 18;
+
 /**
   * _strcmp - compares two strings
   * @s1: first string
