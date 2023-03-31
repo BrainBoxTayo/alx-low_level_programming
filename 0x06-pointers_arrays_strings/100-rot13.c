@@ -1,12 +1,12 @@
 #include"main.h"
 #include<stdio.h>
 /**
-  * rot_13 - encodes a string into rot_13
+  * rot13 - encodes a string into rot_13
   * @str: string to be encoded
   * Return: pointer to str
   */
 
-char *rot_13(char *str)
+char *rot13(char *str)
 {
 	int i, j = 0;
 	char array_main[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstwxyz"
