@@ -1,28 +1,30 @@
-#include<ctype.h>
 #include"main.h"
 #include<stdio.h>
 /**
-  * rot13 - encodes a string to rot13 crypt
+  * rot_13 - encodes a string into rot_13
   * @str: string to be encoded
   * Return: pointer to str
   */
 
-char *rot13(char *str)
+char *rot_13(char *str)
 {
-	int i;
+	int i, j = 0;
+	char array_main[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstwxyz"
+		;
+	char array_rot_13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefgh
+		ijklm";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (isalpha(str[i]) && ((str[i] >= 65 && str[i] <= 77)
-			|| (str[i] >= 97 && str[i] <= 109)))
-		{
-			str[i] += 13;
-		}
-		else if (isalpha(str[i]) && ((str[i] >= 78 && str[i] <= 90)
-			|| (str[i] >= 110 && str[i] <= 122)))
-		{
-			str[i] -= 13;
-		}
+		j = 0;
+		do {
+			if (str[i] == array_main[j])
+			{
+				str[i] = array_rot_13[j];
+				break;
+			}
+			j++;
+		} while (array_main[j]);
 	}
 	return (str);
 }
