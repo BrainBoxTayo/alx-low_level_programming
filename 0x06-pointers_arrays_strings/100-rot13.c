@@ -9,7 +9,7 @@
 char *rot13(char *str)
 {
 	int i, j = 0;
-	char array_main[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstwxyz"
+	char array_main[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 		;
 	char array_rot_13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
@@ -23,7 +23,7 @@ char *rot13(char *str)
 				break;
 			}
 			j++;
-		} while (array_main[j]);
+		} while (array_main[j] != '\0');
 	}
 	return (str);
 }
