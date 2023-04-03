@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+char *_memcpy(char *dest, char *src, unsigned int n);
 char *_memset(char *s, char b, int n);
 void print_buffer(char *b, int size);
 char *rot13(char *str);
