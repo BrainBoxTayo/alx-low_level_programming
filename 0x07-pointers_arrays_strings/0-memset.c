@@ -6,6 +6,7 @@
   * @s: string
   * @b: byte used to manipulate the string
   * @n: size of bytes
+  * Return: pointer to s
   */
 
 char *_memset(char *s, char b, int n)
@@ -16,5 +17,5 @@ char *_memset(char *s, char b, int n)
 	{
 		*(s + i) = b;
 	}
-	return s;
+	return (s);
 }
