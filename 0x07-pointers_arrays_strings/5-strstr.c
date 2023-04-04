@@ -20,9 +20,11 @@ char *_strstr(char *haystack, char *needle)
 			haystack++;
 			neevar++;
 		}
-		/* if neevar gets to \0 the loop above exits and comes to the if
+		/*
+		 * if neevar gets to \0 the loop above exits and comes to the if
 		 * statement else if neevar does not get to \0 the if statement is
-		 * not true*/
+		 * not true
+		 */
 		if (!*neevar)
 			return (hayvar);
 		haystack++;
