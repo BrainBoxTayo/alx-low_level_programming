@@ -1,1 +1,2 @@
-This is a C project
+# This is the C project for ALX
+~thanks for visiting~

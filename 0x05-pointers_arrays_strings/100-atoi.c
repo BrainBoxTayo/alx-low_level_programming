@@ -18,7 +18,7 @@ int _atoi(char *s)
 		/*tester helps to keep the signs at beginning of the string*/
 		/*mult helps with place and number stores number*/
 		if (isdigit(s[i]))
-		{
+		{	
 			tester = 1;
 			number += mult * (s[i] - '0');
 			mult *= 10;

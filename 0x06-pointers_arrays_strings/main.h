@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+
+void print_buffer(char *b, int size);
 char *rot13(char *str);
 char *leet(char *str);
 char *cap_string(char *str);
