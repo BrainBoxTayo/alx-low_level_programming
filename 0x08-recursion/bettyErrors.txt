@@ -1,0 +1,6 @@
+
+========== 5-sqrt_recursion.c ==========
+5-sqrt_recursion.c:12: ERROR: trailing whitespace
+total: 1 errors, 0 warnings, 41 lines checked
+square_root_helper
+_sqrt_recursion
