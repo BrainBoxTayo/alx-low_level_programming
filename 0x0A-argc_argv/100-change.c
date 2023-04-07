@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 				cents -= 1;
 			ctr += 1;
 		}
-	}
-	printf("%d\n", ctr);
+		printf("%d\n", ctr);
+	}	
 	return (0);
 }
