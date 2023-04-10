@@ -13,8 +13,13 @@ void fibo_helper(int length)
 		num3 = num1 + num2;
 		num1 = num2;
 		num2 = num3;
-		printf(" %lu,", num3);
-		fibo_helper(length - 1);
+		if (length == 1)
+			printf(" %lu\n", num3);
+		else
+		{
+			printf(" %lu,", num3);
+			fibo_helper(length - 1);
+		}
 	}
 	else
 	{
@@ -34,6 +39,5 @@ int main(void)
 
 	printf("%d, %d,", num, num + 1);
 	fibo_helper(length);
-	printf("\b \n");
 	return (0);
 }
