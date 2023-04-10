@@ -6,7 +6,7 @@
   */
 void fibo_helper(int length)
 {
-	static unsigned long int num1 = 0, num2 = 1, num3;
+	static unsigned long int num1 = 1, num2 = 2, num3;
 
 	if (length > 0)
 	{
@@ -30,7 +30,7 @@ void fibo_helper(int length)
 
 int main(void)
 {
-	int num = 0, length = 48;
+	int num = 1, length = 48;
 
 	printf("%d, %d,", num, num + 1);
 	fibo_helper(length);
