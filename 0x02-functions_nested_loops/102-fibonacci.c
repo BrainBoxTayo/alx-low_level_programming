@@ -6,13 +6,14 @@
   */
 void fibo_helper(int length)
 {
-	static unsigned long long int num1 = 0, num2 = 1, num3;
+	static unsigned long int num1 = 0, num2 = 1, num3;
+
 	if (length > 0)
 	{
 		num3 = num1 + num2;
 		num1 = num2;
 		num2 = num3;
-		printf(" %llu,", num3);
+		printf(" %lu,", num3);
 		fibo_helper(length - 1);
 	}
 	else
