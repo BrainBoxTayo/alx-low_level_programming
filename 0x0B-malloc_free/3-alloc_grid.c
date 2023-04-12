@@ -10,11 +10,11 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **two_d, i;
+	int **two_d, i, j, k, l;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	two_d = malloc(width * sizeof(int *));
+	two_d = malloc(height * sizeof(int *));
 	if (two_d == NULL)
 	{
 		free(two_d);
@@ -22,12 +22,20 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < height; i++)
 	{
-		*(two_d + i) = malloc(height * sizeof(int *));
+		*(two_d + i) = malloc(width * sizeof(int *));
 		if (*(two_d + i) == NULL)
 		{
-			free(*(two_d + i));
+			for (l = 0; l < i; l++)
+				free(*(two_d + l));
 			free(two_d);
 			return (NULL);
+		}
+	}
+	for (j = 0; j < height; j++)
+	{
+		for (k = 0; k < width; k++)
+		{
+			two_d[j][k] = 0;
 		}
 	}
 	return (two_d);
