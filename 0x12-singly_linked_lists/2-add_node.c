@@ -4,7 +4,7 @@
 /**
   * add_node - adds elements to a list
   * @head: pointer to a pointer to a list_t list
-  * @str: string to be put into str 
+  * @str: string to be put into str
   * Return: number of nodes
   */
 
