@@ -8,7 +8,7 @@
   * Return: number of nodes
   */
 
-size_t add_node(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	char *str_n;
 	int length;
