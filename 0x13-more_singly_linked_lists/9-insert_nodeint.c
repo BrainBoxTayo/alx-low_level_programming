@@ -17,9 +17,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		newnode->next = node;
 		node = get_nodeint_at_index(*head, (idx - 1));
 		node->next = newnode;
-		return (newnode);
 	}
-	return (NULL);
+	return (newnode);
 }
 /**
   * get_nodeint_at_index -  gets the nth node of a listint_t linked list
@@ -30,7 +29,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	__attribute__((unused))listint_t *node = NULL;
+	listint_t *node = NULL;
 	unsigned int count = 0;
 
 	while (head != NULL)
