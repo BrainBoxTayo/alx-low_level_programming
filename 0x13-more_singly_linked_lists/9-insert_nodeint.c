@@ -30,23 +30,25 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *node;
+	__attribute__((unused))listint_t *node = NULL;
 	unsigned int count = 0;
 
-	node = head;
-	while (node != NULL)
+	while (head != NULL)
 	{
 		if (count <= index)
 		{
-			node = node->next;
-			count++;
 			if (count == index)
-				return (node);
+			{
+				node = head;
+				break;
+			}
+			head = head->next;
+			count++;
 		}
 		else
 		{
 			return (NULL);
 		}
 	}
-	return (NULL);
+	return (node);
 }
