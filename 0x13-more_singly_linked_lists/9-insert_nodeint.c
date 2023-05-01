@@ -2,8 +2,9 @@
 /**
   * insert_nodeint_at_index - inserts a new node at a given position.
   * @head: pointer to head node
-  * @idx - where the new node should be added
+  * @idx: where the new node should be added
   * @n: data
+  * Return: pointer to node
   */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
