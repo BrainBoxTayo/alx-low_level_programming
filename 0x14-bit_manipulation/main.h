@@ -3,6 +3,7 @@
 #include<stddef.h>
 #include<stdio.h>
 void print_binary(unsigned long int n);
+int get_bit(unsigned long int n, unsigned int index);
 unsigned int binary_to_uint(const char *b);
 int _atoi(char *s);
 char *_strcpy(char *dest, char *src);
