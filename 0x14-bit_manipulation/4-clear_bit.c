@@ -1,0 +1,16 @@
+#include"main.h"
+/**
+  * clear_bit - clears the value of a bit at the given index
+  * @n: pointer to a number
+  * @index: index we are lookin gat
+  * Return: 1 or -1(error)
+  */
+int clear_bit(unsigned long int *n, unsigned int index)
+{
+	if (index > 63)
+	{
+		return (-1);
+	}
+	*n = *n & ~(1 << index);
+	return (1);
+}
