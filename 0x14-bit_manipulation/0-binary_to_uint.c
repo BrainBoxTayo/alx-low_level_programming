@@ -7,13 +7,14 @@
   */
 unsigned int binary_to_uint(const char *b)
 {
-	int i, len;
+	int i = 0, len;
 	unsigned int numConv = 0;
 
 	for (len = 0; b[len] != '\0'; ++len)
 		;
+	if (b == NULL)
+		return (0);
 	len--;
-	i = 0;
 	while (len >= 0)
 	{
 		if (b[i] == 48)
