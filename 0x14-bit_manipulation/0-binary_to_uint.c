@@ -14,6 +14,10 @@ unsigned int binary_to_uint(const char *b)
 		;
 	if (b == NULL)
 		return (0);
+	if (len > 32)
+	{
+		return (0);
+	}
 	len--;
 	while (len >= 0)
 	{
