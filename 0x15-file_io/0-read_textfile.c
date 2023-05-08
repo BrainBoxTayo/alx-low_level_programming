@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (c == NULL)
 		return (0);
 	lett_read = read(fd, c, letters);
-	flag = write(STDIN_FILENO, c, lett_read);
+	flag = write(STDOUT_FILENO, c, lett_read);
 	close(fd);
 	free(c);
 	return (flag);
