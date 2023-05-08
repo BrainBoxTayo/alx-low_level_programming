@@ -12,7 +12,7 @@
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd
+	int fd;
 	ssize_t lett_read = 0, flag;
 	char *c;
 
