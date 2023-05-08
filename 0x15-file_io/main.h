@@ -24,4 +24,5 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 ssize_t read_textfile(const char *filename, size_t letters);
+int create_file(const char *filename, char *text_content);
 #endif
