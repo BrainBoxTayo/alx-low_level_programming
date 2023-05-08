@@ -13,8 +13,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	__attribute__((unused))ssize_t lett_read = 0, flag;
 	char *c;
+
+	__attribute__((unused))ssize_t lett_read = 0, flag;
 
 	if (filename == NULL)
 		return (0);
