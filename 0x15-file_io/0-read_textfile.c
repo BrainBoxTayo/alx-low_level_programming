@@ -13,7 +13,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t lett_read = 0, flag;
+	__attribute__((unused))ssize_t lett_read = 0, flag;
 	char *c;
 
 	if (filename == NULL)
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 	c = malloc(letters * sizeof(char));
-	if (!c)
+	if (c == NULL)
 		return (0);
 	lett_read = read(fd, c, letters);
 	flag = write(STDIN_FILENO, c, lett_read);
