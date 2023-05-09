@@ -9,8 +9,8 @@ void cp(char *file_from, char *file_to)
 {
 	int fd, fd2;
 	int closeflag;
-	int rflag = 1;
-	int wflag = 1;
+	ssize_t rflag = 1;
+	ssize_t wflag = 1;
 	char *buffer;
 
 	buffer = malloc(sizeof(char) * BUFFSIZE);
