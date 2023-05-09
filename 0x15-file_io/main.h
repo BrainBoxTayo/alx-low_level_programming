@@ -1,9 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include<stdlib.h>
+#include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
+#include<stdlib.h>
 #include<stddef.h>
+#define BUFFSIZE 1024
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -27,4 +30,5 @@ char *_strstr(char *haystack, char *needle);
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
+void cp(char *file_from, char *file_to);
 #endif
