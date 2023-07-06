@@ -30,6 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(ht->array[index]->value);
 			ht->array[index]->value = strdup(value);
+			return (1);
 		}
 		collision_node = ht->array[index];
 		ht->array[index] = new_node;
