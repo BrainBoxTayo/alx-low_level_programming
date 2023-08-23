@@ -3,10 +3,5 @@ SRC=main.c school.c
 OBJ=$(SRC:.c=.o) 
 NAME=school
 # all block
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
-
-$(OBJ): $(SRC) 
-	$(CC) -c $(SRC)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
