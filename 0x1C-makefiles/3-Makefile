@@ -14,4 +14,4 @@ oclean:
 fclean:
 	$(RM) *~ .*.*.swp $(NAME) *.o
 
-re: fclean all	
+re: fclean all
