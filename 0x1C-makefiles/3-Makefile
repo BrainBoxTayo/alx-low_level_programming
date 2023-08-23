@@ -1,6 +1,6 @@
 CC=gcc
 SRC=main.c school.c
-OBJ=$(SRC:.c=.o) 
+OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm -rf
 # all block
@@ -14,5 +14,4 @@ oclean:
 fclean:
 	$(RM) *~ .*.*.swp $(NAME) *.o
 
-re: fclean all
-	
+re: fclean all	
